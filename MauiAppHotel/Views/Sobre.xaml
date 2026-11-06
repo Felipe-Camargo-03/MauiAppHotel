@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+        </Style>
+    </ContentPage.Resources>
+
+    <VerticalStackLayout Padding="10" Spacing="10"
+                      VerticalOptions="Center">
+
+        <Label Text="Sobre"
+            FontFamily="MeaCulpa"
+            TextColor="{StaticResource Primary}"
+            FontSize="40"
+            HorizontalTextAlignment="Center"
+            Margin="0, 50, 0, 50" />
+        
+        <Border StrokeShape="RoundRectangle 10"
+        BackgroundColor="{StaticResource Gray200}">
+
+            <VerticalStackLayout Padding="10">
+                <Label Text="App desenvolvido por Felipe Camargo&#10;Desenvolvido no ano 2026." />
+            </VerticalStackLayout>
+        </Border>
+                    
+        <Button Text="Voltar"      
+                Clicked="Button_Clicked"        
+                Margin="300, 10, 0, 0" />
+        
+    </VerticalStackLayout>
+</ContentPage>
